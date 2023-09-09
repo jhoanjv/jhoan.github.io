@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+body{
+    background-color: #fffffe;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+p{
+    width: 90%;
+    margin: 10px auto;
+}
+
+ul{
+    width: 80%;
+    margin: 20px auto;
+    list-style-type: georgian;
+}
+
+table{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    border-collapse: separate;
+    background-color: #0f0e17;
+    border-radius: 10px;
+    color: #a7a9be;
+    padding: 10px;
+}
+
+th{
+    color: #fffffe;
+}
+
+
+tr{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    border: solid 2px #fffffe;
+    border-radius: 10px;
+}
+
+form{
+
+    width: 100%;
+    margin: 20px;
+}
+
+
+fieldset{
+    max-width: 600px;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0f0e17;
+    margin: 8px 0;
+    font-size: medium;
+}
+
+input::placeholder {
+    color: #fffffe;
+}
+
+input[type="text"],
+input[type="datalist"] {
+    height: 45px;
+    width: 100%;
+    color: #fffffe;
+}
+
+input[type="submit"] {
+    background-color: #e53170;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    fieldset{
+        width: 80%;
+    }
+  }

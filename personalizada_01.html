@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personalizada 01</title>
+	<link rel="stylesheet" href=".\css\styleP01.css" />
+</head>
+
+<body>
+	<h1>Informacion Jhoan Orjuela</h1>
+	<p>Soy un estudiante de tercer semestre de Ingeniería de Software y tecnólogo en diseño e integración de
+		automatismos mecatrónicos, con amplia experiencia en programación en diversos lenguajes de programación, como:</p>
+	<ul>
+		<li>Python</li>
+		<li>SQL</li>
+		<li>Java</li>
+		<li>JavaScript</li>
+	</ul>
+
+	<table>
+		<tr class="head">
+			<th></th>
+			<th>Basico</th>
+			<th>Intermedio</th>
+			<th>Avanzado</th>
+		</tr>
+		<tr>
+			<th>Python</th>
+			<td></td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr class="even">
+			<th>SQL</th>
+			<td></td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Java</th>
+			<td></td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr class="even">
+			<th>JavaScript</th>
+			<td></td>
+			<td>x</td>
+			<td></td>
+		</tr>
+	</table>
+	<form action="personalizada_02.html" method="get">
+		<fieldset>
+			<legend>Mensaje para Jhoan</legend>
+
+			<input type="text" name="name" id="name" placeholder="Su Nombre"><br />
+			<input type="text" name="email" id="email" placeholder="Su  Email"><br />
+
+			<input type="datalist" name="cuidad" list="cuidad" placeholder="Su Ciudad">
+
+            <datalist id="cuidad">
+                <option value="Bogota">
+                <option value="Cali">
+                <option value="Medellin">
+                <option value="Manizales">
+                
+            </datalist><br>
+
+			<span class="title">Te gusto el contenido?</span><br>
+			<label><input type="radio" name="member" value="si" /> Si</label>
+			<label><input type="radio" name="member" value="no" /> No</label></p>
+			<input type="submit" value="Registro" />
+		</fieldset>
+	</form>
+</body>

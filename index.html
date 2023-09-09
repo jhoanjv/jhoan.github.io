@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitacora De Actividades</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&display=swap');
+
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    header {
+      background-color: #172a47;
+      color: #f5f1e3;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      margin: 20px auto;
+      width: 80%;
+      border-collapse: separate;
+    }
+
+    th,
+    td {
+      border: 1px solid #172a47;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #172a47;
+      color: #428DFC
+    }
+
+    a {
+      color: #1776CA;
+      text-decoration: none;
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+
+    .logo_index {
+      width: 100%;
+      height: 200px;
+    }
+
+    .logo {
+      margin: 20px 45%;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Desarrollador: Jhoan Orjuela</h1>
+  </header>
+  <div class="logo_index">
+    <img class="logo"
+      src="data:image/png;base64,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" />
+    <div class="container">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Actividad</th>
+          <th>Maqueta personalizada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Actividad No1</td>
+          <td><a href="personalizada_01.html" target="_blank">Personalizada</a></td>
+        </tr>
+        <tr>
+          <td>Actividad No2</td>
+          <td><a href="personalizada_02.html" target="_blank">Personalizada</a></td>
+        </tr>
+        <tr>
+          <td>Actividad No3</td>
+          <td><a href="personalizada_03.html" target="_blank">Personalizada</a></td>
+        </tr>
+        <tr>
+          <td>Actividad No4</td>
+          <td><a href="personalizada_04.html" target="_blank">Personalizada</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

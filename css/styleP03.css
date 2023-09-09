@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body{
+  width: 100%;
+  background: #16161a;
+
+}
+
+.all{
+  width: 70%;
+  margin: 20px auto;
+}
+
+header{
+  display: flex;
+  width: 100%;
+}
+
+nav{
+  flex: 1;
+}
+
+nav ul li{
+  display: inline;
+}
+
+li a{
+  color: #fffffe;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  background-color: #7f5af0;
+  border-radius: 5px;
+}
+
+h1{
+  flex: 1;
+  color:#fffffe ;
+}
+
+h2,p, a{
+  color: #94a1b2;
+}
+
+main{
+  margin: 20px 0;
+  display: flex;
+}
+
+.containerContact{
+  flex: 1;
+
+  display: inline;
+  padding: 0 20px;
+}
+
+iframe{
+  flex: 1;
+
+  display: inline;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 950px) {
+  
+  header, main{
+    display: block;
+  }
+
+}
+
+
